@@ -11,19 +11,20 @@ const Result = lazy(() => import("@/components/Result"));
 const Search = lazy(() => import("../pages/Search"));
 const Account = lazy(() => import("../pages/Account"));
 const Login = lazy(() => import("../pages/Login"));
+const Home = lazy(() => import("../pages/Home"));
 
 const Demo = lazy(() => import("../pages/demo"));
 
 const routers = createHashRouter([
   //使用Navigate进行重定向
-  {
-    path: "/",
-    element: (
-      <Suspense>
-        <Navigate to="/demo" />
-      </Suspense>
-    ),
-  },
+  // {
+  //   path: "/",
+  //   element: (
+  //     <Suspense>
+  //       <Navigate to="/demo" />
+  //     </Suspense>
+  //   ),
+  // },
   {
     path: "/",
     element: (
@@ -32,6 +33,14 @@ const routers = createHashRouter([
       </Suspense>
     ),
     children: [
+      {
+        path: "",
+        element: (
+          <Suspense>
+            <Home />
+          </Suspense>
+        ),
+      },
       {
         path: "search", //搜索
         element: (

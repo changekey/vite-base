@@ -125,3 +125,14 @@ meter {
 ::-webkit-details-marker {
   display: none;
 }
+@font-face {
+  font-family: "OrientalDaKai";
+  src: url("./assets/fonts/jmJRj305y35T.woff2") format("woff2"),
+    url("./assets/fonts/jmJRj305y35T.woff") format("woff");
+  font-weight: 400;
+  /* font-style: normal; */
+  font-display: swap;
+}
+body {
+  font-family: "OrientalDaKai", sans-serif; /* 设置默认字体 */
+}
