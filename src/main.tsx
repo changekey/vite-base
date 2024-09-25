@@ -17,6 +17,7 @@ import "@/utils/rootFontSize";
 // 如果调用 event.preventDefault()，则不会抛出错误。
 window.addEventListener("vite:preloadError", (event) => {
   console.warn("Failed to preload module:", "vite:preloadError");
+  sessionStorage.setItem("vitePreloadError", "vite:preloadError");
   window.location.reload(); // 刷新页面
 });
 
