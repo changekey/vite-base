@@ -215,7 +215,7 @@ export const loadThemeCSS = (theme) => {
     document.head.appendChild(link);
   }
   // console.log(window.location.origin, baseUrl, "location.href");
-  link.href = `${window.location.origin}/css/${theme}.css`;
+  link.href = `${window.location.origin}/vite-base/css/${theme}.css`;
 };
 // 使用正则表达式匹配数字部分
 export function extractNumber(str) {

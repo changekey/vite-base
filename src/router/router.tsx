@@ -1,4 +1,8 @@
-import { Navigate, createBrowserRouter } from "react-router-dom";
+import {
+  Navigate,
+  createBrowserRouter,
+  createHashRouter,
+} from "react-router-dom";
 import { lazy, Suspense } from "react";
 
 const App = lazy(() => import("@/App"));
@@ -10,7 +14,7 @@ const Login = lazy(() => import("../pages/Login"));
 
 const Demo = lazy(() => import("../pages/demo"));
 
-const routers = createBrowserRouter([
+const routers = createHashRouter([
   //使用Navigate进行重定向
   {
     path: "/",
