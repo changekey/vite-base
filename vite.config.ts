@@ -4,7 +4,7 @@ import { join } from "node:path";
 import removeConsole from "vite-plugin-remove-console";
 
 export default defineConfig({
-  // base: "/vite-base/",
+  base: "/vite-base/",
   plugins: [react(), removeConsole()],
   resolve: {
     // 配置路径别名
