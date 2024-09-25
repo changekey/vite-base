@@ -1,0 +1,186 @@
+@import "@/global.less";
+.container {
+  min-height: calc(100vh - 3.79534884rem);
+  display: flex;
+  flex-direction: column;
+  background: rgba(245, 245, 245, 1);
+  .search {
+    padding: @-24 4.651162790000001%;
+    background: rgba(245, 245, 245, 1);
+    display: flex;
+    align-items: center;
+
+    .clearable {
+      margin-right: @-14;
+      font-size: @-16;
+      font-weight: 400;
+      color: rgba(51, 51, 51, 1);
+    }
+    .input {
+      flex: 1;
+      padding: 0 @-16 0 @-20;
+      height: @-36;
+      border-radius: @-22;
+      background: rgba(255, 255, 255, 1);
+      display: flex;
+      align-items: center;
+      font-size: @-14;
+      font-weight: 400;
+      color: rgba(102, 102, 102, 1);
+      .type {
+        display: flex;
+        align-items: center;
+        margin-right: @-21;
+        .typeText {
+          white-space: nowrap;
+          margin-right: @-11;
+        }
+        .icon {
+          font-size: @-10;
+        }
+      }
+    }
+    .searchInput {
+      :global {
+        .adm-input-element {
+          font-size: @-14;
+          font-weight: 400;
+          color: rgba(102, 102, 102, 1);
+        }
+      }
+    }
+    .line {
+      width: 0.5px;
+      height: @-20;
+      margin: 0 @-12;
+    }
+    .searchBtn {
+      font-size: @-16;
+      font-weight: 400;
+      white-space: nowrap;
+    }
+  }
+  .content {
+    flex: 1;
+    padding: @-24 @-20;
+    border-radius: @-10 @-10 0 0;
+    background: rgba(255, 255, 255, 1);
+    .record {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: @-24;
+      .recordLeft {
+        font-size: @-16;
+        font-weight: 400;
+        color: rgba(51, 51, 51, 1);
+      }
+      .recordRight {
+        .deleteIcon {
+          font-size: @-17;
+          color: rgba(102, 102, 102, 1);
+        }
+        img {
+          width: @-17;
+          height: @-17;
+          object-fit: cover;
+        }
+      }
+    }
+    .recordList {
+      display: flex;
+      flex-wrap: wrap;
+      .recordItem {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0 @-15;
+        height: @-24;
+        font-size: @-14;
+        font-weight: 400;
+        color: rgba(102, 102, 102, 1);
+        border-radius: @-12;
+        background: rgba(244, 244, 244, 1);
+        margin-right: @-10;
+        margin-bottom: @-12;
+        position: relative;
+        .closeIcon {
+          position: absolute;
+          top: 0;
+          right: 0;
+          transform: translate(30%, -30%);
+          font-size: @-12;
+          color: rgba(153, 153, 153, 1);
+        }
+      }
+      .moreImg {
+        width: @-24;
+        height: @-24;
+        object-fit: cover;
+      }
+    }
+    .hot {
+      .hotTitle {
+        font-size: @-16;
+        font-weight: 400;
+        color: rgba(51, 51, 51, 1);
+        margin-top: @-36;
+        margin-bottom: @-24;
+      }
+      .hotList {
+        padding: 0 @-10;
+        .hotItem {
+          display: flex;
+          align-items: center;
+          margin-bottom: @-16;
+          .hotoRder,
+          .hotoText,
+          .hotoLabel {
+            font-size: @-14;
+            font-weight: 400;
+            color: rgba(102, 102, 102, 1);
+          }
+          .hotoText {
+            margin-left: @-28;
+            margin-right: auto;
+            color: rgba(51, 51, 51, 1);
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+          }
+          .hotoLabel {
+            color: rgba(255, 255, 255, 1);
+            .merchant,
+            .product {
+              width: @-21;
+              height: @-21;
+              border-radius: @-4;
+              background: rgba(11, 146, 254, 1);
+              display: flex;
+              align-items: center;
+              justify-content: center;
+            }
+            .product {
+              background: rgba(253, 127, 27, 1);
+            }
+          }
+        }
+      }
+    }
+  }
+}
+.badge {
+  .close {
+  }
+  :global {
+    .adm-badge {
+      background-color: transparent;
+    }
+  }
+}
+.marginAuto {
+  //  padding: 0 4.651162790000001%;
+  width: 90.69767442%;
+  margin: 0 auto;
+  height: auto;
+}

@@ -1,0 +1,89 @@
+@import "@/global.less";
+.popup {
+  :global {
+    .adm-popup-close-icon {
+      top: @-20;
+    }
+    .adm-popup-close-icon {
+      padding: @-4;
+    }
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  .titleBox {
+    margin-top: @-51;
+    margin-bottom: @-74;
+    .title {
+      display: flex;
+      justify-content: center;
+      align-items: flex-end;
+      font-size: @-12;
+      font-weight: 400;
+      color: rgba(102, 102, 102, 1);
+      margin-bottom: @-6;
+    }
+    .text {
+      font-size: @-20;
+      font-weight: 400;
+      color: rgba(51, 51, 51, 1);
+      span {
+        font-size: @-36;
+        font-weight: 700;
+        color: rgba(51, 51, 51, 1);
+      }
+    }
+  }
+
+  .content {
+    flex: 1;
+    width: 100%;
+    .radio {
+      border-bottom: @-0-5 solid rgba(153, 153, 153, 0.3);
+      padding: @-14 @-28;
+      .radioItem {
+        display: flex;
+        align-items: center;
+        width: calc(100vw - 5rem);
+        .radioItemImg {
+          flex: 0 0 2.5rem;
+          .icon {
+            width: auto;
+            height: @-26;
+            object-fit: cover;
+          }
+        }
+
+        .radioText {
+          // margin-left: @-20;
+        }
+      }
+      :global {
+        .ant-radio-wrapper {
+          flex-direction: row-reverse;
+        }
+        .adm-radio {
+          flex-direction: row-reverse;
+        }
+        .adm-radio-content {
+          padding: 0;
+        }
+      }
+    }
+  }
+  .footerBtn {
+    margin-top: @-100;
+    margin-bottom: @-72;
+    flex: 1;
+    width: @-278;
+    .btn {
+      height: @-48;
+      border-radius: @-24;
+      font-size: @-16;
+      font-weight: 700;
+      color: rgba(255, 255, 255, 1);
+    }
+  }
+}
